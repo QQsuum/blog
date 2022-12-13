@@ -25,7 +25,7 @@ const App = () => {
 		}
 	}, [isLogged])
 	
-	useEffect(() => navigate('/articles'))
+	useEffect(() => navigate('/articles'), [])
 	
 	return (
 		<div className='blog-app'>
