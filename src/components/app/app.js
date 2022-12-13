@@ -25,6 +25,8 @@ const App = () => {
 		}
 	}, [isLogged])
 	
+	useEffect(() => navigate('/articles'))
+	
 	return (
 		<div className='blog-app'>
 			<Routes>
