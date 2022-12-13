@@ -1,0 +1,147 @@
+$info-color: #1890ff;
+$error-color: #f5222d;
+$success-color: #52c41a;
+.article {
+	width: 65%;
+	background-color: #fff;
+	margin: 26px auto 0;
+	padding: 15px 15px 24px;
+	box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.08);
+	border-radius: 5px;
+	position: relative;
+}
+.top-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.left-wrapper {
+	width: 80%;
+}
+.title-and-favorited {
+	display: flex;
+	align-items: baseline;
+}
+.title {
+	font-size: 20px;
+	color: $info-color;
+	font-family: 'Inter';
+	word-wrap: break-word;
+	max-width: 90%;
+}
+.favoritesCount {
+	margin-left: 13px;
+	font-size: 12px;
+	flex-wrap: nowrap;
+}
+.tags {
+	margin-bottom: 10px;
+}
+.tag {
+	margin: 7px 8px 0 0;
+	display: inline-block;
+	font-size: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+	padding: 3px 3px;
+	line-height: 15px;
+
+	overflow: hidden;
+}
+.content {
+	margin: 5px 0 60px;
+	max-width: 72%;
+	word-wrap: break-word;
+	line-height: 140%;
+	color: rgba(0, 0, 0, 0.75);
+}
+.description {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.5);
+	max-width: 72%;
+	margin-bottom: 10px;
+}
+.author {
+	display: flex;
+}
+
+.author-info {
+	display: flex;
+	flex-direction: column;
+	text-align: end;
+}
+.name {
+	font-size: 18px;
+}
+.date {
+	white-space: nowrap;
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.avatar {
+	margin-left: 12px;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+}
+
+.reactMarkDown {
+	font-size: 12px;
+}
+.reactMarkDown h1 {
+	font-size: 20px;
+}
+.reactMarkDown ul li {
+	list-style: none;
+	margin-left: 15px;
+}
+.reactMarkDown ol li {
+	margin-left: 15px;
+}
+.reactMarkDown p {
+	margin-top: 10px;
+}
+.button-delete {
+	margin: 0 12px 0 10px;
+	font-weight: 400;
+	font-size: 14px;
+	padding: 8px 18px;
+	border: 1px solid $error-color;
+	border-radius: 5px;
+	color: $error-color;
+	&:hover {
+		cursor: pointer;
+		opacity: 70%;
+		background-color: $error-color;
+		color: #fff;
+		transform: scale(0.95);
+		transition: all 0.3s ease;
+	}
+}
+.button-edit {
+	
+	font-weight: 400;
+	font-size: 14px;
+	padding: 8px 18px;
+	border: 1px solid $success-color;
+	border-radius: 5px;
+	color: $success-color;
+	&:hover {
+		cursor: pointer;
+		opacity: 70%;
+		background-color: $success-color;
+		color: #fff;
+		transform: scale(0.95);
+		transition: all 0.3s ease;
+	}
+}
+
+.right-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.buttons-wrapper {
+	margin-top: 30px;
+
+	display: flex;
+}

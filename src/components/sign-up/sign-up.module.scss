@@ -1,0 +1,101 @@
+$error-color: #f5222d;
+$blue-color: #1890ff;
+.sign-up {
+	margin: 60px auto;
+	display: flex;
+	flex-direction: column;
+	padding: 48px 38px;
+	width: 385px;
+	min-height: 600px;
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid #d9d9d9;
+	box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07),
+		0px 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198),
+		0px 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275),
+		0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035),
+		0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725),
+		0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+	border-radius: 6px;
+	position: relative;
+}
+.title {
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+.label {
+	font-weight: 400;
+	text-align: left;
+	font-size: 14px;
+	border: 1px solid transparent;
+}
+.input {
+	height: 40px;
+	padding: 8px 12px;
+	margin-bottom: 12px;
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	&.error {
+		border: 1px solid $error-color;
+	}
+}
+.checkbox {
+	display: flex;
+	padding: 8px 0;
+	margin: 8px 0 0;
+	border-top: 1px solid #e8e8e8;
+	cursor: pointer;
+}
+.check {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.checkbox-text {
+	font-size: 14px;
+	color: #595959;
+}
+.button {
+	margin: 20px 0 8px;
+	width: 100%;
+	height: 40px;
+	background: $blue-color;
+	border-radius: 4px;
+	color: #fff;
+	border: none;
+	&:hover {
+		cursor: pointer;
+		opacity: 80%;
+		transform: scale(0.98);
+		transition: all 0.3s ease;
+	}
+}
+
+.inactive {
+	background-color: #bababa;
+
+	&:hover {
+		cursor: default;
+		opacity: 100%;
+		transform: scale(1);
+	}
+}
+
+.sign-in {
+	font-size: 12px;
+	color: #8c8c8c;
+	text-align: center;
+}
+.sign-in-link {
+	color: $blue-color;
+	text-decoration: none;
+}
+.error-message {
+	color: $error-color;
+	margin-top: -12px;
+	font-size: 14px;
+	margin-bottom: 12px;
+}

@@ -1,0 +1,77 @@
+.wrapper {
+	position: absolute;
+	top: 88px;
+	right: -150px;
+
+	transform: translate(0) scale(1);
+	transition: all 0.3s;
+}
+.inactive {
+	transform: translate(-120px, -25px) scale(0);
+}
+
+.modal {
+	background-color: white;
+	opacity: 1;
+	color: #000;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	width: 240px;
+	height: 104px;
+	box-shadow: 0 3px 30px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	&::before {
+		content: '';
+		position: absolute;
+		left: -6px;
+		background: #ffffff;
+		transform: rotate(45deg);
+		height: 12px;
+		width: 12px;
+	}
+}
+
+.top {
+	display: flex;
+	align-items: baseline;
+}
+.bottom {
+	display: flex;
+	justify-content: flex-end;
+}
+.image {
+	height: 14px;
+	width: 14px;
+}
+.text {
+	margin-left: 9px;
+}
+.btn-no {
+	margin-right: 8px;
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 3px 8px;
+	cursor: pointer;
+	&:hover {
+		cursor: pointer;
+		opacity: 80%;
+		transform: scale(0.95);
+		transition: all 0.3s ease;
+	}
+}
+.btn-yes {
+	background: #1890ff;
+	border-radius: 4px;
+	color: #fff;
+	padding: 3px 8px;
+	cursor: pointer;
+	&:hover {
+		cursor: pointer;
+		opacity: 80%;
+		transform: scale(0.98);
+		transition: all 0.3s ease;
+	}
+}
