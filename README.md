@@ -1,1 +1,1 @@
-vercel: https://blog-c521kmnp0-redtabbble-gmailcom.vercel.app/articles/
+vercel: https://blog-5ou91ya9b-redtabbble-gmailcom.vercel.app
